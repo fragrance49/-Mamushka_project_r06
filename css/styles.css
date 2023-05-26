@@ -1,0 +1,258 @@
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body
+{
+    margin:  0px;
+    padding: 0px;
+    width:   100%;
+}
+
+.ratingForm
+{
+    display:       none;            /* Hide the form until its (dynamic) formation is complete */
+    margin:        5vh auto 0px;
+    padding:       2vw;
+    padding-left:  2vw;             /* For Firefox support, as 'padding' value cannot be retrieved through JS (an empty-string is returned) */
+    width:         92vw;
+    height:        auto;
+    /*max-width: 1400px;*/
+
+    background-position: top left;
+    background-repeat:   no-repeat;
+    background-size:     100% 100%;
+}
+
+#introAnimation
+{
+    position: absolute;
+    top:      0;
+    left:     0;
+    width:    100vw;
+    height:   100vh;
+    z-index:  10;
+}
+
+.formText
+{
+    position:    relative;
+    margin:      0 auto;
+    width:       fit-content;
+    text-align:  center;
+    color:       blue;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap:   break-word;
+}
+
+#title
+{
+    font-size:   3vw;
+    text-shadow: none;
+}
+
+/* Rating-Bar */
+.ratingBar
+{
+    position: relative;
+    margin:   5% auto;
+    
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+
+    height: intrinsic;          /* Safari/WebKit uses a non-standard name */
+    height: -moz-max-content;   /* Firefox/Gecko */
+    height: -webkit-max-content;/* Chrome */
+
+    /* [r02] Suited Chrome:
+    width:  fit-content;
+    height: fit-content;
+    */
+}
+
+.ratingBar #rateButtonsContainer
+{
+    display: inline-block;
+}
+
+.ratingBar .buttonBox
+{
+    display:    inline-block;
+    position:   relative;
+    width:      var(--buttonBox_dim);
+/*    height:     var(--buttonBox_dim);*/
+    text-align: center;
+/*    background: none;*/
+}
+
+.BtnBg{
+    width: 100%;
+    height: 35vh;
+}
+.ratingBar .buttonBox .rateButtonBckg
+{
+    position:   absolute;
+    top:        45%;
+    left:       50%;
+    transform:  translate(-50%, -50%);
+    width:      55%;
+    height: 50%;
+}
+
+
+.ratingBar .buttonBox .rate_txt {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+/*    color: #fff;*/
+/*    text-shadow: 2px 2px 2px black;*/
+    background-color: transparent;
+}
+
+/* Navigation Bar */
+.navigationBar
+{
+    position: relative;
+    display:  block;
+    margin:   10px auto;
+    width:    100%;
+    height:   var(--navigationBar_dim);
+}
+
+.navigationBar .navigationButton
+{
+    border:            0;
+    height:            100% !important;
+    min-width:         var(--navigationBar_dim);   /* to match navigation-bar's height */
+    background-color:  transparent;
+    background-size:   contain;
+    background-repeat: no-repeat;
+}
+
+.navigationBar #prevButton
+{
+    float:               left;
+    background-position: left;
+}
+
+.navigationBar #nextButton
+{
+    float:               right;
+    background-position: right;
+}
+
+#comment
+{
+    /* Center the text within the Navigation-Bar */
+    position:  absolute;
+    top:       50%;
+    left:      50%;
+    transform: translate(-50%, -50%);
+
+    font-size:   4vw;
+    text-shadow: none;
+}
+
+
+
+
+.main_bar {
+    display: flex;
+    top: 50px;
+    text-align: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_question{
+    width:46vw; 
+    height: 5vh; 
+}
+
+
+#main_points_counter{
+    width:12vw; 
+    height: 10vh; 
+}
+
+.mqimg{
+    position: relative;
+}
+.mqimg img {
+    width: 100%;
+    height: 100%;
+}
+.img_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+
+.lower_panel
+{
+    position: relative;
+    margin:   5% auto;
+    
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+
+    height: intrinsic;          /* Safari/WebKit uses a non-standard name */
+    height: -moz-max-content;   /* Firefox/Gecko */
+    height: -webkit-max-content;/* Chrome */
+
+    /* [r02] Suited Chrome:
+    width:  fit-content;
+    height: fit-content;
+    */
+    
+}
+.lower_panel #lowpanelContainer
+{
+    display: inline-block;
+}
+.panel_img{
+    position: absolute;
+/*    width: 100%;*/
+    width: -webkit-fill-available;
+}
+
+.lower_panel .buttonBox
+{
+    display:    inline-block;
+    position:   relative;
+    width :10vw;
+    text-align: center;
+    background: none;
+}
+
+.lower_panel .buttonBox img
+{
+    width:  100%;
+    padding: 10%;
+}
+        
+
+/* Media Customizations */
+@media screen
+{
+    :root
+    {
+        --navigationBar_dim  : 12vw;
+        --buttonBox_dim      : 10vw;    /* Calculated in code */
+        --buttonBox_fontSize : 5vw;     /* Calculated in code. Nominally = --buttonBox_dim / 2. */
+    }
+}

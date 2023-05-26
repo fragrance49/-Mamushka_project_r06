@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+
+<body>
+    <!-- Opening Animation -->
+    <img id="introAnimation">
+
+    <!-- Rating Form -->
+    <div class="ratingForm">
+        <!-- Title -->
+        <div class="formText" id="title"></div>
+        
+        <!-- Rating-Bar -->
+        <div class="ratingBar">
+            <img class="buttonBox" id="leftThumbImg">
+            <div                   id="rateButtonsContainer"></div>
+            <img class="buttonBox" id="rightThumbImg">
+        </div>
+
+        <!-- Navigation-Bar [Bottom] -->
+        <div class="navigationBar">
+            <button class="navigationButton" id="prevButton"></button>
+            <div    class="formText"         id="comment"></div>
+            <button class="navigationButton" id="nextButton"></button>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery.min.js"></script>
+    
+    <!-- Scripts -->
+    <script src="./js/ConfigMaps.js"></script>
+    <script src="./js/src/RatingForm.js"></script>
+</body>
+
+</html>

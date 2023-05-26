@@ -1,0 +1,251 @@
+{
+    "JSON-VERSION": 23.1,
+
+    "Rserved_words" : {
+    "^M" : "https://mamushka.canabolabs.com",
+    "^#" : "http://127.0.0.1/img/ImageBank/",
+    "^@" : "23437643742",
+    "^P" : "9200200",
+    "^R" : "325"
+    },
+
+    "Url-to-display" : [
+    "https://mamushka.canabolabs.com/", 
+    "https://*.canabolabs.com/"
+    ],
+
+    "screen-type" : "Trivia",
+    "screen-display" : "Landscape",
+
+    "design" :
+    {
+        "pageTitle"         : "a Trivia test Form",
+        "introAnimation"    : "./img/Animation/curtain_1200px_1800mSec_1time.gif",
+        "introAnimDuration" : 1800,
+        "bodyBckgColor"     : "lightblue",
+        "bodyBckgImages"    : ["./img/Frame/frame-rect.gif", "./img/Frame/birds1.gif"],
+        "formBorder_style"  : null,
+        "numberRateButtons" : 4,
+        "numberPanelButtons" :5,
+        "fadeInDuration"    : 500
+    },
+   "defaultTextProperties" : {
+     "Object_ID": "07711",
+     "ObjectName": "defaultTextProperties",
+     "Object_Parent": "TextProperties",
+     "font" : "Sarif",
+     "size" : "12",
+     "color" : "black",
+     "style": null
+     },
+    "defaultAnswerButton" : {
+        "Object_ID": "999444",
+        "ObjectName": "defaultAnswerButton",
+        "Object_Parent": "SimplePressButton",
+        "Object_Media": {
+          "idle": "^#/AnswerButtonIdle.gif",
+          "hover": "^#/AnswerButtonHoover.gif",
+          "press": "\"tinyurl.com/SimpleButtonidleMedia\",",
+          "pressURL": "^M/answer.php?^@=45333222?page=^P&?answer=^E"
+        },
+        "AnswerText": "Mickey Mouse",
+        "XSize": "15vw",
+        "YSize" : "20vw",
+        "XPosition" : "10",
+        "YPosition" : "30"
+    },
+
+    "default_panel_button" : {
+      "Object_ID": "200400",
+      "parent-object-ID" : "200200",
+      "XSize": "9vw",
+      "Object_Media" : {
+        "click-sound" : "^#/click.mp3",
+        "idle": "^#/PanelButtonIdle.gif",
+        "hover": "^#/PanelButtonHoover.gif",
+        "press": "^#/PanelButtonPress.gif",
+        "pressURL": "^M/default-button.php?page=^P&"
+      }
+    },
+   
+    "answerButton1" : {
+        "Object_ID": "874443",
+        "ObjectName": "defaultAnswerButton",
+        "Object_Parent": "defaultAnswerButton",
+        "Parent_Object_iD": "999444",
+         "Object_Media": {
+              "idle": 
+                "http://127.0.0.1/img/Button/t1.png"
+         },
+        "AnswerText": "George Washington"
+      },
+  
+    "answerButton2" : {
+        "Object_ID": "874444",
+        "ObjectName": "defaultAnswerButton",
+        "Object_Parent": "defaultAnswerButton",
+        "Parent_Object_iD": "999444",
+         "Object_Media": {
+              "idle": 
+                "http://127.0.0.1/img/Button/t2.png"
+         },
+        "AnswerText": "Zachary Taylor"
+    },
+
+    "answerButton3" : {
+        "Object_ID": "874445",
+        "ObjectName": "defaultAnswerButton",
+        "Object_Parent": "defaultAnswerButton",
+        "Parent_Object_iD": "999444",
+         "Object_Media": {
+              "idle": 
+                "http://127.0.0.1/img/Button/t3.png"
+         },
+        "AnswerText": "Theodore Roosevelt"
+    },
+
+    "answerButton4" : {
+        "Object_ID": "874446",
+        "ObjectName": "defaultAnswerButton",
+        "Object_Parent": "defaultAnswerButton",
+        "Parent_Object_iD": "999444",
+        "Object_Media": {
+          "idle": 
+            "http://127.0.0.1/img/Button/t4.png"
+        },
+        "AnswerText": "George H. W. Bush"
+    },
+    "main_question" : {
+        "parent-object-ID" : "200301",
+        "screen-element_number" : "1",
+        "text" : "מי גילה את ה CBD ?",
+        "font-size" : "10",   
+        "XSize": "40vw",
+        "YSize" : "5vh",
+        "XPosition" : "20",
+        "YPosition" : "10",
+        "Object_Media" : {
+        "background" : "^#/LowerPanel.gif"
+        } 
+    },
+    
+    "main_points_counter" : {
+        "parent-object-ID" : "200301",
+        "screen-element_number" : "2",
+        "text" : "50 נק'",
+        "size" : "10",   
+        "font-size" : "8",   
+        "XSize": "10vw",
+        "YSize" : "10vh",
+        "Object_Media" : {
+        "background" : "^#/PointsCircle.gif"
+        }
+    },
+    "prev_button" : {
+        "Object_ID": "200321",
+        "parent-object-ID" : "200200",
+        "screen-element_number" : "3",
+        "XSize": "10vw",
+        "Object_Media" : {
+            "idle": "^#/PrevButtonIdle.gif",
+            "hover": "^#/prevButtonHoover.gif",
+            "press": "^#/prevButtonPress.gif",
+            "pressURL": "^M/answer.php?page=^P&action=prev&prev=^R"
+        }
+    },
+    "next_button" : {
+        "Object_ID": "200322",
+        "parent-object-ID" : "200200",
+        "screen-element_number" : "4",
+        "XSize": "10vw",
+        "Object_Media" : {
+            "idle": "^#/NextButtonIdle.gif",
+            "hover": "^#/nextButtonHoover.gif",
+            "press": "^#/nextButtonPress.gif",
+            "pressURL": "^M/answer.php?page=^P&"
+        }
+    },
+  
+
+    "lower_panel" : {
+        "Object_ID": "200401",
+        "parent-object-ID" : "200300",
+        "screen-element_number" : "8",
+        "Object_Media" : {
+        "background" : "^#/LowerPanel.gif"
+        },
+        "XSize": "80",
+        "YSize" : "30",
+        "XPosition" : "20",
+        "YPosition" : "60"
+    },
+
+    "panel_button1" : {
+        "Object_ID": "200411",
+        "parent-object-ID" : "200400",
+        "screen-element_number" : "9",
+        "Object_Media" : {
+        "idle": "^#/PanelButtonIdle.gif",
+        "hover": "^#/PanelButtonHoover.gif",
+        "press": "^#/^E-PanelButtonidleMedia\",",
+        "pressURL": "^M/moreinfo.php?page=^P"
+        },
+        "XPosition" : "30",
+        "YPosition" : "60"
+    },
+    
+    "panel_button2" : {
+        "Object_ID": "200412",
+        "parent-object-ID" : "200400",
+        "screen-element_number" : "10",
+        "Object_Media" : {
+        "idle": "^#/PanelButtonIdle.gif",
+        "hover": "^#/PanelButtonHoover.gif",
+        "press": "^#/^E-PanelButtonidleMedia\",",
+        "pressURL": "https://www.cnn.com/"
+        },
+        "XPosition" : "50",
+        "YPosition" : "60"
+    },
+
+    "panel_button3" : {
+        "Object_ID": "200413",
+        "parent-object-ID" : "200400",
+        "screen-element_number" : "11",
+        "Object_Media" : {
+        "idle": "^#/PanelButtonIdle.gif",
+        "hover": "^#/PanelButtonHoover.gif",
+        "press": "^#/PanelButtonHoover.gif",
+        "pressURL": "https://www.yahoo.com"
+        },
+        "XPosition" : "70",
+        "YPosition" : "60"
+    },
+    "panel_button4" : {
+        "Object_ID": "200413",
+        "parent-object-ID" : "200400",
+        "screen-element_number" : "12",
+        "Object_Media" : {
+        "idle": "^#/PanelButtonPress.gif",
+        "hover": "^#/PanelButtonHoover.gif",
+        "press": "^#/^E-PanelButtonidleMedia\",",
+        "pressURL": "https://www.yahoo.com"
+        },
+        "XPosition" : "70",
+        "YPosition" : "60"
+    },
+    "panel_button5" : {
+        "Object_ID": "200413",
+        "parent-object-ID" : "200400",
+        "screen-element_number" : "12",
+        "Object_Media" : {
+        "idle": "^#/PanelButtonPress.gif",
+        "hover": "^#/PanelButtonHoover.gif",
+        "press": "^#/^E-PanelButtonidleMedia\",",
+        "pressURL": "https://www.yahoo.com"
+        },
+        "XPosition" : "70",
+        "YPosition" : "60"
+    }
+
+}

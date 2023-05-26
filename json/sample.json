@@ -1,0 +1,228 @@
+{
+  "JSON-VERSION": 23.1,
+
+  "Rserved-words" : {
+    "^M" : "https://mamushka.canabolabs.com/r06/",
+    "^#" : "https://mamushka.canabolabs.com/ImageBank/ImageBank",
+    "^@" : "23437643742",
+    "^P" : "9200200"
+  },
+
+  "Url-to-display" : [
+    "www.xxx.ccc.com", 
+    "http.youyou.co.el/foo/bar"
+  ],
+
+  "screen-type" : "Trivia",
+  "screen-display" : "Landscape",
+
+  
+  "Object-list" : {
+    "default-object" : {
+      "Object_ID": "200300",
+      "screen-element_number" : "0",
+      "Object_Madia" : {
+        "background" : "^#/def-bck.gif",
+        "click-sound" : "^#/click.mp3"
+      }
+    },
+    "default-text-label" : {
+      "Object_ID": "200301",
+      "parent-object-ID" : "200300",
+      "rtl" : true,
+      "style" : null,
+      "shadow" : "2px 2px 2px greenyellow",
+      "font" : "Sans",
+      "text"  : "This is a default text"
+    },
+
+    "default-button" : {
+      "Object_ID": "200200",
+      "parent-object-ID" : "200300",
+      "Object_Madia" : {
+        "click-sound" : "^#/click.mp3",
+        "idle": "^#/SimpleButtonIdle.gif",
+        "hoover": "^#/SimpleButtonHoover.gif",
+        "press": "^#/SimpleButtonPress.gif",
+        "pressURL": "^M/answer.php?page=^P&"
+      }
+    },
+
+    "default-panel-button" : {
+      "Object_ID": "200400",
+      "parent-object-ID" : "200200",
+      "Object_Madia" : {
+        "click-sound" : "^#/click.mp3",
+        "idle": "^#/PanelButtonIdle.gif",
+        "hoover": "^#/PanelButtonHoover.gif",
+        "press": "^#/PanelButtonPress.gif",
+        "pressURL": "^M/default-button.php?page=^P&"
+      }
+    },
+    
+    "default-answer-button" : {
+      "Object_ID": "200302",
+      "parent-object-ID" : "200200",
+      "font-size" : "8", 
+      "XSize": "20",
+      "YSize" : "40",
+      "Object_Madia" : {
+        "answer-image": "^#/^P/^E/image.gif",
+        "answer-text": "Default Answer Text",
+        "idle": "^#/AnswerButtonIdle.gif",
+        "hoover": "^#/AnswerButtonHoover.gif",
+        "press": "^#/AnswerButtonPress.gif",
+        "pressURL": "^M/answer.php?page=^P&"
+      }
+    },
+    
+    "default-bottom-button" : {
+      "Object_ID": "200303",
+      "parent-object-ID" : "200200"
+    },
+   
+    "main-question" : {
+      "parent-object-ID" : "200301",
+      "screen-element_number" : "1",
+      "text" : "מי גילה את ה CBD ?",
+      "font-size" : "10",   
+      "XSize": "60",
+      "YSize" : "30",
+      "XPosition" : "20",
+      "YPosition" : "10",
+      "Object_Madia" : {
+        "background" : "^#/QuestionHeader.gif"
+      } 
+    },
+    
+    "main-points-counter" : {
+      "parent-object-ID" : "200301",
+      "screen-element_number" : "2",
+      "text" : "50 נק'",
+      "size" : "10",   
+      "font-size" : "8",   
+      "XSize": "10",
+      "YSize" : "10",
+      "XPosition" : "10",
+      "YPosition" : "10",
+      "Object_Madia" : {
+        "background" : "^#/PointsCircle.gif"
+      }
+    },
+
+    "prev-button" : {
+       "Object_ID": "200321",
+      "parent-object-ID" : "200200",
+      "screen-element_number" : "3",
+      "Object_Madia" : {
+        "idle": "^#/PrevButtonIdle.gif",
+        "hoover": "^#/PrevButtonHoover.gif",
+        "press": "^#/PrevButtonPress.gif",
+        "pressURL": "^M/answer.php?page=^P&action=prev&prev=^R"
+      }
+    },
+    "next-button" : {
+       "Object_ID": "200322",
+      "parent-object-ID" : "200200",
+      "screen-element_number" : "4",
+      "Object_Madia" : {
+        "idle": "^#/NextButtonIdle.gif",
+        "hoover": "^#/NextButtonHoover.gif",
+        "press": "^#/NextButtonPress.gif",
+        "pressURL": "^M/answer.php?page=^P&"
+      }
+    },
+
+    "answer-button1" : {
+       "Object_ID": "200331",
+      "parent-object-ID" : "200302",
+      "screen-element_number" : "5",
+      "Object_Madia" : {
+        "answer-image": "^#/^P/^E/image.gif",
+        "answer-text": "רפאל משולם"
+      },
+      "XPosition" : "30",
+      "YPosition" : "40"
+    },
+    
+    "answer-button2" : {
+       "Object_ID": "200332",
+      "parent-object-ID" : "200302",
+      "screen-element_number" : "6",
+      "Object_Madia" : {
+        "answer-image": "^#/^P/^E/image.gif",
+        "answer-text": "לומיר האנוש"
+      },
+      "XPosition" : "55",
+      "YPosition" : "40"
+    },
+
+     "answer-button3" : {
+       "Object_ID": "200333",
+      "parent-object-ID" : "200302",
+      "screen-element_number" : "7",
+      "Object_Madia" : {
+        "answer-image": "^#/^P/^E/image.gif",
+        "answer-text": "רוג’ר אדאמס"
+      },
+      "XPosition" : "80",
+      "YPosition" : "40"
+    },
+
+    "lower-panel" : {
+     "Object_ID": "200401",
+     "parent-object-ID" : "200300",
+     "screen-element_number" : "8",
+     "Object_Madia" : {
+        "background" : "^#/lower-panel-bck.gif"
+      },
+    "XSize": "80",
+    "YSize" : "30",
+    "XPosition" : "20",
+    "YPosition" : "60"
+    },
+    
+    "panel-button1" : {
+      "Object_ID": "200411",
+      "parent-object-ID" : "200400",
+      "screen-element_number" : "9",
+      "Object_Madia" : {
+        "idle": "^#/^E-PanelButtonidleMedia\",",
+        "hoover": "^#/^E-PanelButtonidleMedia\",",
+        "press": "^#/^E-PanelButtonidleMedia\",",
+        "pressURL": "^M/moreinfo.php?page=^P"
+      },
+      "XPosition" : "30",
+      "YPosition" : "60"
+    },
+    
+     "panel-button2" : {
+      "Object_ID": "200412",
+      "parent-object-ID" : "200400",
+      "screen-element_number" : "10",
+      "Object_Madia" : {
+        "idle": "^#/^E-PanelButtonidleMedia\",",
+        "hoover": "^#/^E-PanelButtonidleMedia\",",
+        "press": "^#/^E-PanelButtonidleMedia\",",
+        "pressURL": "www.cnn.com"
+      },
+      "XPosition" : "50",
+      "YPosition" : "60"
+    },
+    
+     "panel-button3" : {
+      "Object_ID": "200413",
+      "parent-object-ID" : "200400",
+      "screen-element_number" : "11",
+      "Object_Madia" : {
+        "idle": "^#/^E-PanelButtonidleMedia\",",
+        "hoover": "^#/^E-PanelButtonidleMedia\",",
+        "press": "^#/^E-PanelButtonidleMedia\",",
+        "pressURL": "www.yahoo.com"
+      },
+      "XPosition" : "70",
+      "YPosition" : "60"
+    }
+   
+}
+}
